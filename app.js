@@ -1,6 +1,6 @@
 import axios from "axios";
 
-async function firstTask(userId) {
+async function getData(userId) {
     //GetDatas
     let userDatas = (await axios(`https://jsonplaceholder.typicode.com/users/${userId}`)).data
     let userPosts = (await axios(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)).data
@@ -11,4 +11,4 @@ async function firstTask(userId) {
 
     console.log(combinedObject)
 }
-export default firstTask
+export default getData

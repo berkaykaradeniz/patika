@@ -1,3 +1,2 @@
-import firstTask from "./my-module.js";
-
-firstTask(1);
+import getData from "./app.js";
+getData(1);
